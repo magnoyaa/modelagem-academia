@@ -1,11 +1,11 @@
-# Modelagem de Banco de Dados - Academia
+Modelagem de Banco de Dados - Academia
 
 Entrega Semana 01
 
-Nome: [Antonio Magno Marinho Costa Junior]
-Curso: [Analise e Desenvolvimento de Sistemas]
+Nome: Antonio Magno Marinho Costa Junior
+Curso: Analise e Desenvolvimento de Sistemas
 
-## Cenário escolhido
+ Cenário escolhido
 
 Escolhi o mini-desafio da **Academia**.
 
@@ -20,50 +20,50 @@ Substantivos: aluno, plano, mensalidade, instrutor, aula
 Verbos: escolhe (plano), paga, dá (aula), se inscreve
 
 Regras que eu tirei do cenário:
-- cada aluno tem um plano
-- um plano pode ter vários alunos
-- um aluno paga várias mensalidades
-- um instrutor pode dar várias aulas, mas cada aula tem só um instrutor
-- um aluno pode fazer várias aulas e uma aula tem vários alunos
+cada aluno tem um plano
+ um plano pode ter vários alunos
+ um aluno paga várias mensalidades
+ um instrutor pode dar várias aulas, mas cada aula tem só um instrutor
+ um aluno pode fazer várias aulas e uma aula tem vários alunos
 
 ## Entidades e atributos
 
 **ALUNO**
-- id_aluno (PK)
-- nome
-- cpf
-- telefone
-- data_nascimento
+ id_aluno (PK)
+ nome
+ cpf
+ telefone
+ data_nascimento
 
 **PLANO**
-- id_plano (PK)
-- nome
-- valor
-- duracao_meses
+ id_plano (PK)
+ nome
+ valor
+ duracao_meses
 
 **PAGAMENTO**
-- id_pagamento (PK)
-- data_pagamento
-- valor_pago
-- forma_pagamento
+ id_pagamento (PK)
+ data_pagamento
+ valor_pago
+ forma_pagamento
 
 **INSTRUTOR**
-- id_instrutor (PK)
-- nome
-- telefone
-- especialidade
+ id_instrutor (PK)
+ nome
+ telefone
+ especialidade
 
 **AULA**
-- id_aula (PK)
-- nome
-- dia_semana
-- horario
-- vagas
+id_aula (PK)
+ nome
+ dia_semana
+ horario
+ vagas
 
 ## Relacionamentos e cardinalidade
 
 | Relacionamento | Cardinalidade |
-|---|---|
+
 | PLANO - ALUNO (um plano tem vários alunos) | 1:N |
 | ALUNO - PAGAMENTO (um aluno faz vários pagamentos) | 1:N |
 | INSTRUTOR - AULA (um instrutor dá várias aulas) | 1:N |
