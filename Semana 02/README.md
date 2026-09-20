@@ -3,8 +3,8 @@
 
 Entrega Semana 02
 
-Nome: [seu nome]
-Curso: [seu curso]
+Nome: Antonio Magno Marinho Costa Junior
+Curso: Analise e desenvolvimento de Sistemas
 
 ## Cenário
 
